@@ -1,9 +1,11 @@
 # Parallel-Ship-Detection-Edge-BNN-for-FPGA
 
 --> Dataset is available at ----
+
 --> Paths in all files are subject to change. The user must change them for its directory structure.
 
 --> Formatted files from ships_dataset.m are used as inputs to code paper+code TODO reference.
+
 --> Trained files are transformed from -1/1 to 0/1 using algorithms from paper+code(EV paper) TODO reference.
 
 --> dump_xxx.txt are BNN parameters.
