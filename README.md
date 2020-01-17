@@ -15,4 +15,11 @@ Paths in all files are to be changed. The user must change them for its director
 5.) The final trained and formatted (0/1/integer) neural network parameters are provided as: dump_w_(0-2).txt are network weights per layer and dump_t_(0-2).txt are thresholds per layer.
 
 # System
-The main script is system_sim.m. It simulates pre- and post-processing algorithms and BNN inference as described in the paper. The inference with sliding window is tested on a sample image. Additionally it implementes the Neuron-Merger algorithm for the first layer and build its Verilog code (ship_merger). Next to that it outputs verliog files of combinational circuits for all BNN layer in a straight-forward implementation (standard_model). 
+The main script is system_sim.m. First part (lines 1-27) reads the ship detection network parameters. 
+
+The second part (lines 28-210) runs the Neuron-Merger algorithm as described in the paper and creates the RTL Verilog file of the first layer in the BNN (50 neurons with 1200 inputs each). 
+
+The third part (lines 211-216) builds the straight-forward Verilog implementation of all three layers. This includes the first one, but in actuallity, the one created through the Neuron-Merger algorithm is used. The straight-forward RTL code of the first layer is only used for comparison in the paper.
+
+The fourth part (lines 217+) simulates the pre- and post-processing algorithms and BNN inference as described in the paper. The inference with sliding window is tested on a sample image.
+
