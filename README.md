@@ -1,6 +1,6 @@
 # Parallel-Ship-Detection-Edge-BNN-for-FPGA
 
---> Dataset is available at ----
+--> Dataset is available at https://www.kaggle.com/rhammell/ships-in-satellite-imagery. It is also uploaded at :: for DOI and reproducibility.
 
 --> Paths in all files are subject to change. The user must change them for its directory structure.
 
